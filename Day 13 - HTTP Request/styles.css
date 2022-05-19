@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+  --white: #fff;
+  --black: #141414;
+  --green: #4A885F;
+  --red: #AC3A4E;
+  --color-primary: #5288db;
+  --color-sec: #1C4F9B;
+  --grey: #eee;
+  --dark-grey: #3D3D3D;
+  --dark-shadow: #bababa;
+  --light-shadow: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(to bottom right, #fff, #ccc);
+  /* background-color: #eee; */
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* border: 1px solid var(--red); */
+  
+}
+
+.container .user {
+  background-color: #e8e8e8;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 4rem;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px #ccc, -1px -1px 3px white;
+  position: relative;
+}
+
+.container .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom right, #fff, #eee);
+  padding: 1rem;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px #bababa, -2px -2px 4px white;
+  transition: all .3s;
+}
+
+.container .btn:hover {
+  background-image: linear-gradient(to top left, var(--color-primary), var(--color-sec));
+  color: var(--white);
+  box-shadow: -1px -1px 2px #bababa inset, 1px 1px 2px white inset;
+}
+
+.container .btn:active {
+  background-image: linear-gradient(var(--color-primary), var(--color-primary));
+}
+
+.user h2 {
+  padding: 1rem 0;
+}
+
+#users ul {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding: 1rem 2rem;  
+}
