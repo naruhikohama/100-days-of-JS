@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+  --white: #fff;
+  --black: #141414;
+  --green: #4A885F;
+  --red: #AC3A4E;
+  --color-primary: #5288db;
+  --color-sec: #1C4F9B;
+  --grey: #eee;
+  --dark-grey: #3D3D3D;
+  --dark-shadow: #bababa;
+  --light-shadow: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(to bottom right, #fff, #fff, #ddd);
+  /* background-color: #eee; */
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 100vh;
+  width: 60%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  /* border: 1px solid var(--red);  */
+}
+
+.content {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px var(--light-shadow), -2px -2px 6px white;
+  transition:all .3s;
+  /* border: 1px solid var(--green);  */
+}
+
+.content h2, label, input {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  
+}
+
+.content h2 {
+  font-size:2rem;
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.content input {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 0 5px 10px;
+  box-shadow: 1px 1px 3px var(--dark-shadow) inset;
+}
+
+.content button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, #eee, #fff, #eee);
+  box-shadow: 2px 2px 5px var(--dark-shadow),  -2px -2px 4px white;
+  color: var(--dark-grey);
+  transition:all .3s;
+}
+
+.content button:hover {
+  background-image: linear-gradient(to bottom right, grey, grey);
+  box-shadow: 2px 2px 5px #4d4d4d inset;
+  color: var(--white);
+}
+
+.content button:active {
+  background-image: linear-gradient(to bottom right, var(--black), var(--black));
+  box-shadow: none;
+}
+
+.quotes {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.quotes q {
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.quotes p {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.quotes hr {
+  margin: 2rem 0;
+}
+
+
+
